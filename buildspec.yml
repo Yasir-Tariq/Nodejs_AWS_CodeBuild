@@ -15,6 +15,7 @@ phases:
       - forever stopall
 artifacts:
   files:
+    - 'scripts/*'
     - 'test/*'
     - 'app.js'
     - 'package.json'
