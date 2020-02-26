@@ -3,13 +3,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo 'hello'
+      - npm isntall forever -g
+      - forever start app.js
   build:
     commands:
-      - 'npm test'
+      - npm test
   post_build:
     commands:
-      - 'forever stopall'
+      - forever stopall
 artifacts:
   files:
     - 'test/*'
