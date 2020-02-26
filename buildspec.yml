@@ -5,7 +5,7 @@ phases:
     commands:
       - apt-get install -y nodejs
       - npm install
-      - npm isntall forever -g
+      - npm install forever -g
       - forever start app.js
   build:
     commands:
