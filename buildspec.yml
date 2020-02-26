@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - forever start app.js
+  build:
+    commands:
+      - npm test
+  post_build:
+    commands:
+      - forever stopall
+artifacts:
+  files:
+    - 'test/*'
+    - 'app.js'
+    - 'package.json'
+    - 'buildspec.yml'
+    - 'appspec.yml'
