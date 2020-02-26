@@ -3,7 +3,6 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
       - apt-get install -y nodejs
       - npm install
       - npm isntall forever -g
