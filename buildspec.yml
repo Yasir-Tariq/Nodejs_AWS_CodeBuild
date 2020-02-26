@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - 'forever start app.js'
+      - echo 'hello'
   build:
     commands:
       - 'npm test'
