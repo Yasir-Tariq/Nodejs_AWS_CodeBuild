@@ -15,9 +15,4 @@ phases:
       - forever stopall
 artifacts:
   files:
-    - 'scripts/*'
-    - 'test/*'
-    - 'app.js'
-    - 'package.json'
-    - 'buildspec.yml'
-    - 'appspec.yml'
+    - '**/*'
