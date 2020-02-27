@@ -9,7 +9,7 @@ phases:
       - forever start app.js
   build:
     commands:
-      - npm test
+      - sudo npm test
   post_build:
     commands:
       - forever stopall
