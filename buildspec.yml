@@ -1,15 +1,17 @@
 version: 0.2
 env:
   variables:
-    NODE_VERSION: "8"
+    NODE_VERSION: "13.9.0"
 
 phases:
   pre_build:
     commands:
-      - apt-get install curl -y
-      - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
-      - bash script.sh
-      - apt-get install -y nodejs
+      - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+      - nvm install $NODE_VERSION
+      # - apt-get install curl -y
+      # - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
+      # - bash script.sh
+      # - apt-get install -y nodejs
       - npm install
       - npm install forever -g
       - forever start app.js
