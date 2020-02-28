@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    NODE_VERSION: "8"
+    NODE_VERSION: "4"
 
 phases:
   pre_build:
