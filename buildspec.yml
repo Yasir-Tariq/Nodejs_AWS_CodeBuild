@@ -6,7 +6,6 @@ env:
 phases:
   pre_build:
     runtime-versions:
-      golang: 1.13
       nodejs: $NODE_VERSION
     commands:
       # - apt-get install curl -y
