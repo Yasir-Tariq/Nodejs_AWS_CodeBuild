@@ -24,8 +24,8 @@ var request = require('request');
 
 const NODE_MAJOR_VERSION = process.versions.node.split('.')[0];
 var assert = require('assert');
-it('should return -1 when the version is not valid', function() {
-    if (assert.equal(NODE_MAJOR_VERSION, 13)) {
+it('should throw error when the version is not valid', function() {
+    if (assert(NODE_MAJOR_VERSION > 12)) {
         console.log("OK!");
     }
     else{
