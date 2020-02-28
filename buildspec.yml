@@ -1,13 +1,13 @@
 version: 0.2
-env:
-  variables:
-    NODE_VERSION: "13"
+# env:
+#   variables:
+#     NODE_VERSION: "13"
 
 phases:
   pre_build:
     commands:
       - apt-get install curl -y
-      - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | sudo -E bash 
+      - curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash 
       - apt-get install -y nodejs
       - npm install
       - npm install forever -g
