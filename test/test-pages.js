@@ -17,7 +17,29 @@ var request = require('request');
 // });
 
 
+// if (NODE_MAJOR_VERSION < 13) {
+//   throw new Error('Requires Node 12 (or higher)');
+// }
+
+
 const NODE_MAJOR_VERSION = process.versions.node.split('.')[0];
-if (NODE_MAJOR_VERSION < 13) {
-  throw new Error('Requires Node 12 (or higher)');
-}
+var assert = require('assert');
+it('should return -1 when the version is not valid', function() {
+    if (assert.equal(NODE_MAJOR_VERSION, 13)) {
+        console.log("OK!");
+    }
+    else{
+        throw new Error('Requires Node 13 (or higher)');
+    }
+    // assert.equal(NODE_MAJOR_VERSION, 13);
+    // throw new Error('Requires Node 13 (or higher)');
+  });
+
+// var assert = require('assert');
+// describe('Array', function() {
+//   describe('#indexOf()', function() {
+//     it('should return -1 when the version is not valid', function() {
+//       assert(NODE_MAJOR_VERSION > 12, -1);
+//     });
+//   });
+// });
