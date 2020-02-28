@@ -29,7 +29,7 @@ it('should throw error when the version is not valid', function() {
         assert.ok(true, "Node version is compatible");
     else
         assert.ok(false, "Node version is not compatible");
-  });
+});
 
 // var assert = require('assert');
 // describe('Array', function() {
