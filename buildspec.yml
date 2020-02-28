@@ -6,17 +6,26 @@ env:
 phases:
   pre_build:
     commands:
-      - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-      - source ~/.profile
-      # - export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-      - nvm install $NODE_VERSION
-      # - apt-get install curl -y
-      # - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
-      # - bash script.sh
-      # - apt-get install -y nodejs
+      - apt-get install curl -y
+      - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
+      - bash script.sh
+      - apt-get install -y nodejs
       - npm install
       - npm install forever -g
       - forever start app.js
+      # - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+      # - export NVM_DIR="$HOME/.nvm"
+      # - [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      # - [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      # # - export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      # - nvm install $NODE_VERSION
+      # # - apt-get install curl -y
+      # # - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
+      # # - bash script.sh
+      # # - apt-get install -y nodejs
+      # - npm install
+      # - npm install forever -g
+      # - forever start app.js
   build:
     commands:
       - npm test
