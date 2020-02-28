@@ -19,6 +19,6 @@ phases:
   post_build:
     commands:
       - forever stopall
-artifacts:
-  files:
-    - '**/*'
+# artifacts:
+#   files:
+#     - '**/*'
