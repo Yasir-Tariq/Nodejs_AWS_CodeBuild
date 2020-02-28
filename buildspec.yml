@@ -6,7 +6,7 @@ env:
 phases:
   pre_build:
     commands:
-      - $(curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | sudo -E bash -)
+      - curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash 
       - apt-get install -y nodejs
       - npm install
       - npm install forever -g
