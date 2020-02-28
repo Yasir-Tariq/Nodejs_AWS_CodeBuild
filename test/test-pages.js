@@ -29,7 +29,7 @@ it('should throw error when the version is not valid', function() {
     if (NODE_MAJOR_VERSION > 12)
         assert.ok(true, "Node version is compatible");
     else
-        assert.ok(false, "Node version is not compatible");
+        assert.fail("Node version is not compatible");
 });
 
 // var assert = require('assert');
