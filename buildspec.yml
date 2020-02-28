@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    NODE_VERSION: "13.9.0"
+    NODE_VERSION: "13"
 
 phases:
   pre_build:
