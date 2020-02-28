@@ -22,6 +22,7 @@ var request = require('request');
 // }
 
 const NODE_MAJOR_VERSION = process.versions.node.split('.')[0];
+console.log(NODE_MAJOR_VERSION);
 // const NODE_MAJOR_VERSION = process.versions.node.split('.')[0];
 var assert = require('assert');
 it('should throw error when the version is not valid', function() {

@@ -28,7 +28,7 @@ phases:
       # - forever start app.js
   build:
     commands:
-      - npm test
+      - mocha test/test-pages.js
   post_build:
     commands:
       - forever stopall
