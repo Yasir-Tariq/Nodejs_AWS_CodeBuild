@@ -4,9 +4,10 @@ env:
     NODE_VERSION: "10"
 
 phases:
-  pre_build:
+  install:
     runtime-versions:
       nodejs: $NODE_VERSION
+  pre_build:
     commands:
       # - apt-get install curl -y
       # - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
