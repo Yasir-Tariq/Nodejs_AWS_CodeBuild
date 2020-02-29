@@ -4,7 +4,7 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello EURUS TECHNOLOGIES!!!')
+  res.send('Hello EURUS TECHNOLOGIES, USING NODE VERSION 12!!!')
 })
 
 
