@@ -4,9 +4,9 @@ env:
     NODE_VERSION: "11"
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: $NODE_VERSION
+  # install:
+  #   runtime-versions:
+  #     nodejs: $NODE_VERSION
   pre_build:
     commands:
       # - apt-get install curl -y
