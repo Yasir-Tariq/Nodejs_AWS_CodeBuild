@@ -1,5 +1,5 @@
 // var expect  = require('chai').expect;
-var request = require('request');
+// var request = require('request');
 
 // class Vehicle {
 //     speed = 80;
