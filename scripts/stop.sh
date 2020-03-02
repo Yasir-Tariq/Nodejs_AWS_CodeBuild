@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu/myapp
-npm install forever
+npm install forever -g
 forever stopall
