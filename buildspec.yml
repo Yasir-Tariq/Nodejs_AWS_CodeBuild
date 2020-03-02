@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    NODE_VERSION: "12"
+    NODE_VERSION: "13"
 
 phases:
   install:
@@ -15,7 +15,7 @@ phases:
       # - apt-get install -y nodejs
       # - npm install
       # - npm install forever -g
-      # - forever start app.js
+      - forever start app.js
   build:
     commands:
       - npm test
