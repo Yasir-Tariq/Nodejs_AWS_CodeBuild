@@ -9,14 +9,8 @@ phases:
   #     nodejs: $NODE_VERSION
   pre_build:
     commands:
-      # - apt-get install curl -y
-      # - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x > script.sh
-      # - bash script.sh
-      # - apt-get install -y nodejs
       - npm install
-      # - npm install forever --save
-      # - npm install chai --save
-      # - npm install mocha --save
+      - npm install forever -g
       - forever start app.js
   build:
     commands:
