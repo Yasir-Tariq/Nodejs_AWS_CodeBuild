@@ -14,9 +14,9 @@ phases:
       # - bash script.sh
       # - apt-get install -y nodejs
       - npm install
-      - npm install forever -g
-      - npm install chai -g
-      - npm install mocha -g
+      - npm install forever --save
+      - npm install chai --save
+      - npm install mocha --save
       - forever start app.js
   build:
     commands:
