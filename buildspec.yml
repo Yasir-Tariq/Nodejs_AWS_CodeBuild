@@ -1,12 +1,12 @@
 version: 0.2
-env:
-  variables:
-    NODE_VERSION: "10"
+# env:
+#   variables:
+#     NODE_VERSION: "10" 
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: $NODE_VERSION
+  # install:
+  #   runtime-versions:
+  #     nodejs: $NODE_VERSION #used with AWS managed docker images (standard 3.0)
   pre_build:
     commands:
       - npm install
